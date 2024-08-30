@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <!-- <i class="fa-solid fa-heart"></i> --> 
+         <!-- <i class="fa-solid fa-cart-shopping"></i> -->   
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="Pictures/logo1.png" alt="">  
+                <!-- <h2> <a href="index.html">MANGA <br>House</a></h2> -->
+            </div>  
+            <nav class="linksNav">
+                <ul id="links" class="links">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+
+            <ul id="loggedName" class="loggedName">
+                <li id="userName" style="color: white;"></li>
+            </ul>
+            </nav>
+            <nav class="loggedNav">
+                <ul id="logged" class="logged">
+                    <li id="cart" class="cart">
+                        <span id="cartCount"  class="cartCount"></span>
+                        <button id="cart-btn">
+                        <i class="fa-solid fa-cart-shopping cart-i" data-bs-toggle="tooltip" title="Shopping cart">
+                        </i>
+                        <div class="cart-container" id="cart-container">
+                            <a href="cart.html">Show all Items</a>
+                            <div class="cart-items" id="cart-Items">
+                               
+                            </div>
+                            
+                        </div>
+                        </button>   
+                    </li>
+
+                    <li class="wishlist" id="wishlist">
+                        <span class="wishlistCount" id="wishlistCount"></span>
+                        <button id="wish-btn">
+                        <i class="fa-solid fa-heart" data-bs-toggle="tooltip" title="Wish List!"> </i>
+                            <div class="wishlist-container" id="wishlist-container">
+                                <a href="cart.html">Show all favorits</a>
+                            <div class="wishlist-items" id="wishlist-Items"> 
+                            </div>
+                           
+                        </div>
+
+                    </button>
+                    </li>
+
+                    <li><a href="#" id="logout">logout</a></li>
+                </ul>
+            </nav>    
+        </header>
+        <main class="background">
+            <div class="overlay"></div>
+            <div class="container">
+                <img src="Pictures/logo1.png" alt="">  
+                <p class="description">Manga and Manhwa store </p>
+            </div>
+        </main>
+        <div class="search-section">
+          
+          
+            <select name="categories" id="categories" onchange="getval()">
+                <option value="type">Search by Type</option>
+                <option value="name">Search by Name</option>
+              </select>
+              <input type="search" placeholder="Search" id="search-input" class="search-input" onkeyup="search()">
+              
+        </div>
+        <section class="home-proudcts-container "id="proudcts-container">
+
+        </section> 
+
+        <footer >
+            <div class="links">
+                <h3>Contact us</h3>
+                <a href="#"> <i class="fa-brands fa-facebook-f m-3 facebook "></i></a>
+                <a href="#">  <i class="fa-brands fa-twitter m-3 twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram m-3 instagram"></i></a> 
+               </div>
+    
+               <div class="copyrights">COPYRIGHT © 2024. ALL RIGHT RESERVED BY MANGA FI Store</div>
+               <div class="branches">
+                <h3>Our branches</h3>
+                <ul>
+                    <li>Cairo</li>
+                    <li>Giza</li>
+                    <li>Alexandria</li>
+                </ul>
+               </div>
+    
+        </footer>
+
+        <Script src="js/bootstrap.min.js"></Script>
+
+        <Script src="js/register.js"></Script>
+        <Script src="js/login.js"></Script>
+        <Script src="js/main.js"></Script>
+        <Script src="js/cart.js"></Script>
+        <Script src="js/script.js"></Script>  
+    </body>
+</html>

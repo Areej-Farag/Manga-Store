@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/style.css"/>
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha521-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha521-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="Pictures/logo1.png" alt="">  
+                <h2> <a href="index.html">MANGA <br>House</a></h2>
+            </div>  
+            <nav class="linksNav">
+                <ul id="links" class="links">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+
+            <ul id="loggedName" class="loggedName">
+                <li id="userName" style="color: white;"></li>
+            </ul>
+            </nav>
+            <nav class="loggedNav">
+                <ul id="logged" class="logged">
+                    <li id="cart" class="cart">
+                        <span id="cartCount"  class="cartCount">0</span>
+                        <a href="#cart-section">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                </li>
+                    <li class="wishlist" id="wishlist">
+                        <span class="wishlistCount" id="wishlistCount">0</span>
+                        <a href="#favorits-section">
+                        <i class="fa-solid fa-heart"></i>
+                    </a>
+                    </li>
+
+                    <li><a href="#">logout</a></li>
+                </ul>
+            </nav>
+
+            
+        </header>
+
+
+        <section class="proudcts-container container" id="cart-section">
+            <h2 class="text-center">Your Cart Items</h2>
+            <div class="cartPage-container" id="cart_page-container">
+            </div>
+            <div class="total-price" >
+            <div id = "totalPriceDiv">
+                <h3>Total price: <span id="total-price"></span></h3>
+             </div>   
+                <button class="btn" id="buy-btn">Buy Now</button>
+            </div>
+        </section>
+
+        <section class="proudcts-container container" id="favorits-section">
+            <h2 class="text-center">Your Favorite Items</h2>
+            <div class="cartPage-container  owl-carousel owl-theme" id="fav-container">
+            
+            </div>
+        </section>
+
+    
+        <footer >
+            <div class="links">
+                <h3>Contact us</h3>
+                <a href="#"> <i class="fa-brands fa-facebook-f m-3 facebook "></i></a>
+                <a href="#">  <i class="fa-brands fa-twitter m-3 twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram m-3 instagram"></i></a> 
+               </div>
+    
+               <div class="copyrights">COPYRIGHT © 2024. ALL RIGHT RESERVED BY MANGA FI Store</div>
+               <div class="branches">
+                <h3>Our branches</h3>
+                <ul>
+                    <li>Cairo</li>
+                    <li>Giza</li>
+                    <li>Alexandria</li>
+                </ul>
+               </div>
+    
+        </footer>
+        <Script src="js/bootstrap.min.js"></Script>
+        <Script src="js/main.js"></Script> 
+        <script src="js/cart.js"></script>
+        <Script src="js/script.js"></Script>
+       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha521-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+        <script>
+                $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:2,
+            nav:true
+        },
+        1000:{
+            items:4,
+            nav:true,
+            loop:true
+        }
+    }
+})
+            </script>
+    </body>
+</html>
