@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
     transition : 0.3s ;
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
 }
 body{
     position: relative;
@@ -13,16 +16,23 @@ html{
 }
 header{
     z-index: 100;
-    display: flex;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat( 3 , 1fr) ;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 80px;
     background-color:#14213d;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 30px
+    padding: 0 30px;
+    justify-items: center;
+    text-align: center !important;
+    /* justify-content: space-between; *//
+}
+.linksNav{
+ margin-top: -8px;
 }
 header .logo{
     flex-direction: row;
@@ -245,6 +255,7 @@ input[type="submit"]{
     column-gap: 10px;
 }
 .proudct-item {
+  
     margin:20px auto;
     width: 100%;
     background-color: #E5E5E5;
@@ -265,7 +276,8 @@ input[type="submit"]{
 
 }
 .proudct-item h4 {
-
+    
+    font-size: 22px !important;
     margin-left: 10px;
 
 }
@@ -453,13 +465,30 @@ footer h3{
 .copyrights{
     color: #ffce22;
     justify-content: center;
-    font-size: 14px;
+    font-size: 18px;
     display: flex;
     align-items: center;
 }
 
 .branches , .links{
     margin-top: 30px;
+}
+#total-price{
+    font-size: 30px !important;
+}
+.buy-btn{
+    font-size: 20px !important;
+    letter-spacing: 0px !important;
+    width: 100px !important;
+    height: 40px !important;
+    background-color: #ffce22;
+    color: #14213d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buy-btn:hover{
+    background-color: #e0b51b;
 }
 @media  screen and (max-width: 1200px  ) and (min-width:785px) {
     .home-proudcts-container,.cartPage-container , .favPage-container , footer{
